@@ -19,7 +19,7 @@ function ImageUpload() {
         const formData = new FormData();
         formData.append('image', selectedFile);
 
-        axios.post('http://127.0.0.1:5000/upload', formData, {
+        axios.post('https://webapp-backend-nine.vercel.app/upload', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
